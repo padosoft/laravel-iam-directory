@@ -7,8 +7,10 @@
         "php": "^8.3",
         "padosoft/laravel-iam-contracts": "*",
         "padosoft/laravel-iam-server": "*",
-        "spatie/laravel-package-tools": "^1.16",
-        "directorytree/ldaprecord-laravel": "^3.0"
+        "spatie/laravel-package-tools": "^1.16"
+    },
+    "suggest": {
+        "directorytree/ldaprecord-laravel": "Connettore LDAP/Active Directory reale (richiede ext-ldap). Senza, il core directory (group mapping + JIT) resta usabile con un DirectoryConnector custom."
     },
     "autoload": { "psr-4": { "Padosoft\\Iam\\Directory\\": "src/" } },
     "extra": { "branch-alias": { "dev-main": "0.1-dev" } },
