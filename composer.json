@@ -5,15 +5,28 @@
     "license": "MIT",
     "require": {
         "php": "^8.3",
-        "padosoft/laravel-iam-contracts": "*",
-        "padosoft/laravel-iam-server": "*",
+        "padosoft/laravel-iam-contracts": "^1.0",
+        "padosoft/laravel-iam-server": "^1.0",
         "spatie/laravel-package-tools": "^1.16"
     },
     "suggest": {
         "directorytree/ldaprecord-laravel": "Connettore LDAP/Active Directory reale (richiede ext-ldap). Senza, il core directory (group mapping + JIT) resta usabile con un DirectoryConnector custom."
     },
-    "autoload": { "psr-4": { "Padosoft\\Iam\\Directory\\": "src/" } },
-    "extra": { "branch-alias": { "dev-main": "0.1-dev" } },
+    "autoload": {
+        "psr-4": {
+            "Padosoft\\Iam\\Directory\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Padosoft\\Iam\\Directory\\IamDirectoryServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
