@@ -11,6 +11,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/padosoft/laravel-iam-directory/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/padosoft/laravel-iam-directory/tests.yml?branch=main&style=flat-square&label=tests" alt="Tests"></a>
   <a href="https://packagist.org/packages/padosoft/laravel-iam-directory"><img src="https://img.shields.io/packagist/v/padosoft/laravel-iam-directory.svg?style=flat-square" alt="Latest Version on Packagist"></a>
   <a href="https://packagist.org/packages/padosoft/laravel-iam-directory"><img src="https://img.shields.io/packagist/dt/padosoft/laravel-iam-directory.svg?style=flat-square" alt="Total Downloads"></a>
   <a href="https://packagist.org/packages/padosoft/laravel-iam-directory"><img src="https://img.shields.io/packagist/php-v/padosoft/laravel-iam-directory.svg?style=flat-square" alt="PHP Version"></a>
