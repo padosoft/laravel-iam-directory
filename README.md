@@ -18,6 +18,10 @@
   <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square" alt="License"></a>
 </p>
 
+<p align="center">
+  <strong><a href="https://doc.laravel-iam-directory.padosoft.com">📖 Read the documentation →</a></strong>
+</p>
+
 ---
 
 ## Why this package
@@ -186,10 +190,30 @@ final class CsvDirectoryConnector implements DirectoryConnector
 
 ## Documentation
 
-A docmd doc-site lives in [`docs/`](docs/): start at [`docs/index.md`](docs/index.md), then
-[Getting started](docs/getting-started.md), [Concepts](docs/concepts.md),
-[Provisioning & security](docs/provisioning-and-security.md), [LDAP setup](docs/ldap-setup.md) and the
-[Reference](docs/reference.md).
+📖 **Full documentation: [doc.laravel-iam-directory.padosoft.com](https://doc.laravel-iam-directory.padosoft.com)**
+— a 22-page docmd site with semantic search, covering:
+
+- **Get started** — [Quickstart](https://doc.laravel-iam-directory.padosoft.com/quickstart),
+  [Installation](https://doc.laravel-iam-directory.padosoft.com/installation),
+  [Core concepts](https://doc.laravel-iam-directory.padosoft.com/concepts)
+- **Guides** — [Directory login](https://doc.laravel-iam-directory.padosoft.com/guides/directory-login),
+  [Group → role mapping](https://doc.laravel-iam-directory.padosoft.com/guides/group-mapping),
+  [JIT provisioning & sync](https://doc.laravel-iam-directory.padosoft.com/guides/jit-and-sync),
+  [Custom connector](https://doc.laravel-iam-directory.padosoft.com/guides/custom-connector)
+- **Security & theory** — [Anti-takeover](https://doc.laravel-iam-directory.padosoft.com/security/anti-takeover),
+  [Authoritative sync](https://doc.laravel-iam-directory.padosoft.com/security/authoritative-sync),
+  [Protected roles](https://doc.laravel-iam-directory.padosoft.com/security/protected-roles),
+  [Fail-closed transport](https://doc.laravel-iam-directory.padosoft.com/security/fail-closed)
+- **Architecture** — [overview](https://doc.laravel-iam-directory.padosoft.com/architecture/overview),
+  [login pipeline](https://doc.laravel-iam-directory.padosoft.com/architecture/login-pipeline),
+  [data model](https://doc.laravel-iam-directory.padosoft.com/architecture/data-model),
+  [ADR](https://doc.laravel-iam-directory.padosoft.com/architecture/decisions)
+- **Reference** — [PHP API](https://doc.laravel-iam-directory.padosoft.com/reference/php-api),
+  [config keys](https://doc.laravel-iam-directory.padosoft.com/reference/config),
+  [outcomes & reasons](https://doc.laravel-iam-directory.padosoft.com/reference/outcomes)
+
+The Markdown sources live in [`docs-site/docs/`](docs-site/docs/); the site is built with
+[docmd](https://docs.docmd.io) and deployed to Cloudflare Pages.
 
 ## Security
 

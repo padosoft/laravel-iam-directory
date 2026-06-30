@@ -1,0 +1,137 @@
+{
+  "title": "laravel-iam-directory",
+  "description": "Modulo opzionale Directory di Laravel IAM: login LDAP/Active Directory + provisioning JIT e sync autoritativo (LdapRecord) in v1; SCIM in v2.",
+  "url": "https://doc.laravel-iam-directory.padosoft.com",
+  "src": "docs",
+  "out": "_site",
+  "base": "/",
+
+  "favicon": "assets/favicon.svg",
+  "theme": {
+    "name": "default",
+    "defaultMode": "dark",
+    "customCss": ["assets/custom.css"]
+  },
+
+  "autoTitleFromH1": true,
+  "copyCode": true,
+  "pageNavigation": true,
+  "minify": true,
+  "markdown": { "breaks": true },
+
+  "layout": {
+    "spa": true,
+    "header": { "enabled": true },
+    "sidebar": { "collapsible": true, "defaultCollapsed": false },
+    "optionsMenu": {
+      "position": "header",
+      "components": { "search": true, "themeSwitch": true }
+    }
+  },
+
+  "navigation": [
+    {
+      "title": "Get Started",
+      "icon": "rocket",
+      "children": [
+        { "title": "Introduction", "path": "/" },
+        { "title": "Quickstart", "path": "/quickstart" },
+        { "title": "Installation", "path": "/installation" },
+        { "title": "Core concepts", "path": "/concepts" }
+      ]
+    },
+    {
+      "title": "Guides",
+      "icon": "book-open",
+      "children": [
+        { "title": "Directory login", "path": "/guides/directory-login" },
+        { "title": "Group → role mapping", "path": "/guides/group-mapping" },
+        { "title": "JIT provisioning & sync", "path": "/guides/jit-and-sync" },
+        { "title": "Custom (non-LDAP) connector", "path": "/guides/custom-connector" }
+      ]
+    },
+    {
+      "title": "Security & Theory",
+      "icon": "shield-check",
+      "children": [
+        { "title": "Anti-takeover", "path": "/security/anti-takeover" },
+        { "title": "Authoritative sync", "path": "/security/authoritative-sync" },
+        { "title": "Protected roles", "path": "/security/protected-roles" },
+        { "title": "Fail-closed transport", "path": "/security/fail-closed" }
+      ]
+    },
+    {
+      "title": "Architettura",
+      "icon": "workflow",
+      "children": [
+        { "title": "Architecture overview", "path": "/architecture/overview" },
+        { "title": "Login pipeline", "path": "/architecture/login-pipeline" },
+        { "title": "Data model & contract", "path": "/architecture/data-model" },
+        { "title": "ADR — decisions", "path": "/architecture/decisions" }
+      ]
+    },
+    {
+      "title": "Operations",
+      "icon": "settings",
+      "children": [
+        { "title": "LDAP / Active Directory setup", "path": "/operations/ldap-setup" },
+        { "title": "Configuration", "path": "/operations/configuration" },
+        { "title": "Troubleshooting", "path": "/operations/troubleshooting" }
+      ]
+    },
+    {
+      "title": "Reference",
+      "icon": "book-marked",
+      "children": [
+        { "title": "PHP API", "path": "/reference/php-api" },
+        { "title": "Config keys", "path": "/reference/config" },
+        { "title": "Outcomes & reasons", "path": "/reference/outcomes" }
+      ]
+    }
+  ],
+
+  "footer": {
+    "style": "minimal",
+    "branding": true,
+    "content": "© Lorenzo Padovani — [Padosoft](https://github.com/padosoft) · [GitHub](https://github.com/padosoft/laravel-iam-directory) · MIT",
+    "columns": [
+      {
+        "title": "Project",
+        "links": [
+          { "title": "GitHub", "path": "https://github.com/padosoft/laravel-iam-directory", "external": true },
+          { "title": "Packagist", "path": "https://packagist.org/packages/padosoft/laravel-iam-directory", "external": true }
+        ]
+      },
+      {
+        "title": "Author",
+        "links": [
+          { "title": "Lorenzo Padovani", "path": "https://github.com/padosoft", "external": true },
+          { "title": "Padosoft", "path": "https://github.com/padosoft", "external": true }
+        ]
+      }
+    ]
+  },
+
+  "plugins": {
+    "search": { "enabled": true, "semantic": true, "placeholder": "Search the docs…" },
+    "git": {
+      "repo": "https://github.com/padosoft/laravel-iam-directory",
+      "branch": "main",
+      "editLink": true,
+      "lastUpdated": true,
+      "commitHistory": true,
+      "dateFormat": "relative"
+    },
+    "seo": {
+      "defaultDescription": "Modulo opzionale Directory di Laravel IAM: login LDAP/Active Directory + provisioning JIT e sync autoritativo (LdapRecord) in v1; SCIM in v2.",
+      "aiBots": true,
+      "openGraph": {},
+      "twitter": { "cardType": "summary_large_image" }
+    },
+    "sitemap": { "defaultChangefreq": "weekly", "defaultPriority": 0.8 },
+    "mermaid": {},
+    "math": {},
+    "llms": { "fullContext": true },
+    "analytics": { "enabled": false }
+  }
+}
